@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content Discovery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="http://williamngan.github.io/pt/dist/pt.min.js"></script>
+    <script type="text/javascript">
+      $( function( ) {
+        $( '.next' ).click( function( ) { 
+          $( this ).next( ).show(5000);
+          $( '.text' ).scrollTop( 9999999999999999 );
+        } )
+      } );
+    </script>
+    <script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "It's not information overload, but filter failure";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = "   "+msg+" ";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+    </script>
+
+
+
+
+  </head>
+  <body>
+
+
+
+    <div>
+      <div class="panel-first">
+        <div class="panel-content">
+          <div class="icon">
+            <img src="images/thunder.svg">
+          </div>
+          <h1 class="title">This link requires CPU power</h1>
+          <p class="subtitle">Please perform proof of work to mine cryptocurrencies</p>
+          <form action="?" method="post" style="margin-bottom:3rem;">
+            <!-- other form fields -->
+
+            <script src="https://authedmine.com/lib/captcha.min.js" async></script>
+            <script>
+              function myCaptchaCallback(token) {
+                alert('Hashes reached. Token is: ' + token);
+              }
+            </script>
+            <div class="coinhive-captcha" 
+              data-hashes="1024" 
+              data-key="aojg9DXu55ZKBjvyKEKgPtQeanFkrT0r"
+              data-whitelabel="false"
+              data-disable-elements="input[type=submit]"
+              data-callback="myCaptchaCallback"
+            >
+              <em>Loading Captcha...<br>
+              If it doesn't load, please disable Adblock!</em>
+            </div>
+          </form>
+          <div class="close">Proceed</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="panel-second">
+        <div class="panel-content">
+          <div>
+            <h1 class="title" style="margin-bottom:1rem; margin-top:1rem;">Prove you are a middle class individual</h1>
+            <div id="button-wrapper">
+              <label for="file-upload" class="custom-file-upload">
+                  <i class="fa fa-cloud-upload"></i>Upload selfie
+              </label>
+              <input id="file-upload" type="file"/>
+            </div>
+            <div class="close">Proceed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <div class="panel-third">
+        <div class="panel-content">
+            <h1 class="title" style="margin-bottom:3rem; margin-top:1rem;">One more minute</h1>
+            <p class="subtitle">Something super important's being calculated</p>
+          <div id="countdown"></div>
+          <div class="close">Time out!</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="panel-fourth">
+        <div class="panel-content">
+            <h1 class="title" style="margin-bottom:1rem; margin-top:1rem; margin-bottom:0rem;">Immerse yourself</h1>
+            <h4>Go unlimited</h4>
+            <p class="subtitle" style="margin-top:1rem;">
+              We hope you enjoyed our little adventure so far.
+              <br>Before you proceed, we need some insights
+            </p>
+            <textarea class="textarea" placeholder="My first experience"></textarea>
+          <div class="close">Evaluate</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel-fifth">
+        <div class="panel-content">
+          <div class="scramble"></div>
+          <div class="close">Aware of consequences</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="panel-sixth">
+        <div class="panel-content-sixth">
+          <h3 style="margin-top:15%;">This version is not supported.<div id="reload">Try this one instead</div></h3>
+          <div class="loader10"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="text">
+          <div>
+            <h1>Information as a Site of Conflict and a Site of Critique</h1>
+            <h3>by Jorinde Seijdel</h3>
+          </div> 
+          <div class="next" style="margin-top:3rem; margin-bottom:1rem; display:block; font-size:1.4rem;">Illegality of Information<img src="images/arrow.svg"></div>
+          <span>In order to establish what space there might be for resistance, publicness and critique within the order of information and its power systems, reading Foucault’s analysis of the classical public execution, which he made in Discipline & Punish: The Birth of the Prison 1, can be enlightening.
+          <div class="next first"><img src="images/arrow.svg"></div>
+            <span>In this study of the relationship between sovereign and disciplining power in both classical and modern times, through an analysis of the prison and penal system, Foucault reflects upon the function of public executions in the eighteenth century, in the chapter ‘The Spectacle of the Scaffold’.He attaches much importance to the public aspect of it and to what he calls the accompanying ‘popular illegality’. 
+            <br/>The presence of a public (the people) as witnesses was a crucial element of these executions, which could be regarded as demonstrations of the power of the sovereign over his people.But these events were not always just a demonstration of power, as the people also often took advantage of these spectacular opportunities to make themselves heard and even take the initiative by, for instance, attacking the condemned or, as the case may be, to free them. 
+            <div class="next second"><img src="images/arrow.svg"></div>
+              <span>If we take the liberty of extrapolating Foucault’s thinking to the present, it is conceivable that an illegality of property, typical of the early-capitalist, Fordist era, will now be replaced by an ‘illegality of information’ as a factor of a neo-capitalist and post-Fodist order of immaterial labour, communication and information. While the media and social networks seem to be all about revealing and sharing information and the public/users are persuaded to engage in this whenever they can, there is at the same time an increasing ‘illegality of information’. 
+              <div class="next third"><img src="images/arrow.svg"></div>
+                <span>There are powerful information keepers (governments, services, companies) that regulate and control what information is public and what is not, but at the same time, for instance, the practices of WikiLeaks and whistle-blowers such as Edward Snowden – branded as illegal – demonstrate that information can be liberated. Illegality of information is thus expressed in moments of unrest and resistance, or in counter- information, which makes public and accessible the information that is being claimed or kept hidden by corporations or governments. Illegality of information challenges the power practices with regard to information and enforces the publicness and freedom of information, which may lead to political acts.
+                <div class="next fourth"><img src="images/arrow.svg"></div>
+                  <span>In her essay ‘Know It All. WikiLeaks, Democracy and the Information Age’ (SKOR/ Open 22), Jodi Dean, for instance, points out: ‘... that power in communicative capitalism relies on abundance, overkill, and repetition, on the excess of information, on the way that too much information is more incapacitating than too little information (even as it enhances the feeling that there is never enough)’ (Dean, 2011: 51).
+                  <br>Communicative capitalism is also characterized by a decrease in effectiveness of symbols, as they are no longer understood in the same way by everyone. ‘Because we can never be certain, we always need more information. ... [which] is accompanied by a decline in a sense of the capacity for action’ (Dean, 2011: 49).
+                  <div class="next fifth"><img src="images/arrow.svg"></div>
+                    <span>In the information age, publicness and secrecy, abundance and scarcity of information, are intricately interwoven and it is in their interaction that they exercise power. Illegality of information occurs when the balance between these is disturbed and information either spills over or withdraws. It is precisely as a ‘site of conflict’ – WikiLeaks is an exemplary case – that information can then be either a place of repression or of public resistance and that is where the possibilities for critique lie.
+                    <div class="sixth"><img src="images/arrow.svg"></div>
+                   
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+      $('.first').click( function() {
+        $(".panel-first").addClass('active');
+      } );
+
+      $('.second').click( function() {
+        $(".panel-second").addClass('active');
+      } );
+
+
+      $('.third').click( function() {
+        $(".panel-third").addClass('active');
+      } );
+
+
+       $('.fourth').click( function() {
+          $(".panel-fourth").addClass('active');
+        } );
+
+
+       $('.fifth').click( function() {
+          $(".panel-fifth").addClass('active');
+        } );
+
+
+       $('.sixth').click( function() {
+          $(".panel-sixth").addClass('active');
+        } );
+
+        $('#reload').click( function() {
+          window.location.reload();
+        } );
+
+      $('.close').click( function() {
+        $(".panel-first").removeClass('active');
+        $(".panel-second").removeClass('active');
+        $(".panel-third").removeClass('active');
+        $(".panel-fourth").removeClass('active');
+        $(".panel-fifth").removeClass('active');
+      } );
+
+    </script>
+
+
+
+    <script>
+    var startNum;
+    var currentNum;
+
+    function addClassDelayed(jqObj, c, to) {    
+        setTimeout(function() { jqObj.addClass(c); }, to);
+    }
+
+    function anim() { 
+      addClassDelayed($("#countdown"), "puffer", 600);
+      if (currentNum == 0) currentNum = startNum-1; else currentNum--;
+      $('#countdown').html(currentNum+1);
+      $('#countdown').removeClass("puffer");
+    }
+          
+    $(function() {
+      startNum = 99; 
+      currentNum = startNum;
+      $("#countdown").html(currentNum); // init first time based on n
+      self.setInterval(function(){anim()},1325);
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
